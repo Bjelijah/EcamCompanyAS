@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/camera_tab_blue" >
+        <ImageButton
+            android:id="@+id/health_tab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_btn_selector" />
+        </FrameLayout>
+        
+        <RadioGroup
+            android:id="@+id/health_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            
+            android:gravity="center"
+            android:orientation="horizontal"
+             >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_health_error"
+                android:checked="true"  
+                android:background="@drawable/camera_tab_left_selector"
+                android:text="@string/health_fault"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_health_warning"
+                android:background="@drawable/camera_tab_right_selector"
+                android:text="@string/health_warning"
+                android:button="@null"
+                android:gravity="center"   
+                android:textColor="@color/camera_tab_blue" />
+
+        </RadioGroup>
+        
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/divide_heng" />
+        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

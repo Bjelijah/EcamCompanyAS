@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <ListView
+        android:id="@+id/second_group_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/title_blue"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/group_title_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+		    android:layout_marginRight="15dip"
+            android:src="@drawable/back_btn_selector" />
+        
+        <HorizontalScrollView  
+		    android:id="@+id/group_title_scrollview"
+		    android:layout_width="match_parent"  
+		    android:layout_height="wrap_content"
+		    android:scrollbars="none" >  
+			<TextView
+		        android:id="@+id/group_title_textview"
+		        android:textColor="@color/white"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="20sp" />
+		</HorizontalScrollView>  
+    </LinearLayout>
+
+    <com.howell.ehlib.GroupRefreshListView
+        android:id="@+id/second_device_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.howell.ehlib.GroupRefreshListView>
+	
+</LinearLayout>

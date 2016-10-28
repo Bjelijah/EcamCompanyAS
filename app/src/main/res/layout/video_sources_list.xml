@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/title_blue"
+        android:gravity="center"
+        android:text="@string/camera_list"
+        android:textColor="#FFFFFFFF"
+        android:textSize="23sp" /> -->
+    
+    <com.howell.ehlib.GroupRefreshListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+    	android:fadingEdge="none"  
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+</LinearLayout>

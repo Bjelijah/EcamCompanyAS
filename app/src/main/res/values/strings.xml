@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">群艺馆监控</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_login_title">用户登录</string>
+    <string name="user_name">用户名：</string>
+    <string name="user_password">密码：</string>
+    <string name="internet_device_id">网关id：</string>
+    <string name="login">登录</string>
+    
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="last_update">上次更新</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="refreshing">正在刷新</string>
+    
+    <string name="camera_list">视频</string>
+    <string name="media_lib">媒体库</string>
+    <string name="device">设备</string>
+    <string name="health_degree">健康度</string>
+    <string name="device_manager">设备管理</string>
+    <string name="notice_catalog">系统通知</string>
+    <string name="more">更多</string>
+    
+    <string name="check_device">体检</string>
+    <string name="account">账户管理</string>
+    <string name="sys_message">系统消息</string>
+    <string name="about">关于e看企业版 V1.0.0</string>
+    <string name="exit">注销帐号</string>
+    
+    <string name="remove_device_popmenu_yes">删除</string>
+	<string name="remove_device_popmenu_no">取消</string>
+	<string name="remove_device_popmenu_logout">注销</string>
+	
+	<string name="loacl_file_activity_no_iamge_bg">暂无文件</string>
+	
+	<string name="settings">设置</string>
+	
+	<string name="share_pic">分享图片</string>
+	<string name="big_image_activity_dialog_title_remove">删除</string>
+	<string name="big_image_activity_dialog_message">删除这张照片？</string>
+	<string name="big_image_activity_dialog_yes_button_name">确定</string>
+	<string name="big_image_activity_dialog_no_button_name">取消</string>
+	
+	<string name="health_warning">警告</string>
+	<string name="health_fault">故障</string>
+	
+	<string name="camera_group">分组</string>
+	<string name="camera_all">全部</string>
+	<string name="favorites">收藏</string>
+	
+	<string name="second_group">二级分组</string>
+	<string name="load_more">点击加载更多</string>
+	<string name="load_data">正在加载数据</string>
+	
+	<!-- 摄像机列表 -->
+	<string name="camera_list_wifi_intensity">信号强度：</string>
+	
+	<!-- 错误  -->
+	<string name="prepare_sdp_error">网络繁忙</string>
+	
+	
+	<string-array name = "event_type" > 
+        <item> IO输入 </item> 
+        <item> 运动侦测 </item> 
+        <item> 视频信号丢失 </item> 
+        <!-- <item> 红外滤光片切换模式 </item> 
+        <item> 彩色转黑白模式 </item> 
+        <item> 录像状态 </item> 
+        <item> 存储介质丢失或损坏 </item> 
+        <item> 创建磁盘冗余阵列失败 </item> 
+        <item> 录像状态异常 </item> 
+        <item> 不正常的视频 </item> 
+        <item> 设备异常 </item> 
+        <item> 超出视频连接上限 </item> 
+        <item> 网络码率异常 </item> 
+        <item> 视频码率异常 </item> 
+        <item> 聚焦模糊 </item> 
+        <item> 视频转动 </item>  -->
+    </string-array> 
+    
+	<string-array name = "device_failure" > 
+	    <item> 非法的销售点 </item> 
+	    <item> 风扇异常 </item> 
+        <item> CPU使用率异常 </item> 
+        <item> 内存使用率异常 </item> 
+        <item> 温度异常 </item> 
+        <item> 压力异常 </item> 
+        <item> 电压异常 </item> 
+    </string-array> 
+    
+</resources>

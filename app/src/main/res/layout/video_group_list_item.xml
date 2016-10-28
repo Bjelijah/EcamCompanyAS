@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_video_group_name"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_group"
+        android:drawableRight="@mipmap/qz_icon_forward_normal"
+        android:textColor="@color/black"
+        android:drawablePadding="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingTop="20dip"
+        android:paddingBottom="20dip"
+        android:textSize="20sp"
+        android:text="TextView" />
+    
+
+</LinearLayout>

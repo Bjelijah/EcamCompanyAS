@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        
+            
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/camera_tab_blue"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/camera_list" />
+
+        <!-- <ImageButton
+            android:id="@+id/device_manager_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_btn_selector" /> -->
+
+    </FrameLayout>
+
+        <!-- <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="55dip"
+	        android:background="@color/title_blue"
+	        android:gravity="center"
+	        android:text="@string/camera_list"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="23sp" /> -->
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip" >
+            
+            <!-- <ImageButton
+                android:id="@+id/camera_group_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:src="@drawable/back_btn_selector" /> -->
+            
+	        <RadioGroup
+	            android:id="@+id/camera_radio_group"
+	            android:layout_width="fill_parent"
+	            android:layout_height="55dip"
+	            android:gravity="center"
+	            android:orientation="horizontal"
+	             >
+	
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+	                android:id="@+id/rb_camera_all"
+	                android:background="@drawable/camera_tab_left_selector"
+	                android:text="@string/camera_all"
+	                android:button="@null"
+	                android:gravity="center"
+	                android:paddingLeft="10dip"
+	                android:paddingTop="4dip"
+	                android:paddingRight="10dip"
+	                android:paddingBottom="4dip"   
+	                android:textColor="@color/white" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+	                android:id="@+id/rb_camera_group"
+	                android:background="@drawable/camera_tab_middle_selector"
+	                android:text="@string/camera_group"
+	                android:button="@null"
+	                android:gravity="center"
+	                android:paddingLeft="10dip"
+	                android:paddingTop="4dip"
+	                android:paddingRight="10dip"
+	                android:paddingBottom="4dip"  
+	                android:textColor="@color/camera_tab_blue" />
+	            <RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+	                android:id="@+id/rb_favorites"
+	                android:background="@drawable/camera_tab_right_selector"
+	                android:text="@string/favorites"
+	                android:button="@null"
+	                android:gravity="center"
+	                android:paddingLeft="10dip"
+	                android:paddingTop="4dip"
+	                android:paddingRight="10dip"
+	                android:paddingBottom="4dip"  
+	                android:textColor="@color/camera_tab_blue" />
+	            <!-- <RadioButton
+	                android:id="@+id/rb_favorites"
+	                android:background="@drawable/camera_tab_right_selector"
+	                android:text="@string/favorites"
+	                android:button="@null"
+	                android:gravity="center"
+	                android:paddingLeft="10dip"
+	                android:paddingTop="4dip"
+	                android:paddingRight="10dip"
+	                android:paddingBottom="4dip"  
+	                android:textColor="@color/white" /> -->
+	        </RadioGroup>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:scaleType="fitXY"
+            android:src="@mipmap/divide_heng" />
+        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@android:color/white" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
