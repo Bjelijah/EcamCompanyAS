@@ -47,6 +47,13 @@ include $(PREBUILT_SHARED_LIBRARY)
 #include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := jpush170
+LOCAL_SRC_FILES := libjpush170
+include $(BUILD_SHARED_LIBRARY)
+
+
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := player_jni
 # Add your application source files here...
 LOCAL_SRC_FILES := yv12gl_jni.c streamreq_jni.c audio_jni.c
