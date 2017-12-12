@@ -341,7 +341,7 @@ public class VideoSourceListAdapter extends BaseAdapter implements Const,OnScrol
 				break;
 				
 			case R.id.btn_video_source_btn_1:
-				Log.i("", "position:"+(position - videoGroupsList.size())+",button1");
+				Log.i("123", "position:"+(position - videoGroupsList.size())+",button1");
 				break;
 			case R.id.btn_video_source_btn_2:
 				Log.i("", "position:"+(position - videoGroupsList.size())+",button2");

@@ -74,7 +74,18 @@ public class UserAgent {
 	public void setiMEI(String iMEI) {
 		this.iMEI = iMEI;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return "UserAgent{" +
+				"uUID='" + uUID + '\'' +
+				", model='" + model + '\'' +
+				", name='" + name + '\'' +
+				", agentType='" + agentType + '\'' +
+				", agentOSType='" + agentOSType + '\'' +
+				", manufactory='" + manufactory + '\'' +
+				", oSVersion='" + oSVersion + '\'' +
+				", iMEI='" + iMEI + '\'' +
+				'}';
+	}
 }

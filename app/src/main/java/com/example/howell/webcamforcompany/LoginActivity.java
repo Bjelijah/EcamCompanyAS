@@ -79,7 +79,7 @@ public class LoginActivity extends Activity implements OnClickListener,TagAliasC
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		init();
-		initJPush();
+	//	initJPush();
 		
 		String account = sharedPreferences.getString("account", "");
 		String password = sharedPreferences.getString("password", "");
@@ -178,6 +178,7 @@ public class LoginActivity extends Activity implements OnClickListener,TagAliasC
     			userLoginReq.setUsername(account);
     			userLoginReq.setUserType("InternetUser");//登录平台
     			userLoginReq.setPasswordType("Common");
+				Log.i("123","passwod="+password);
     			userLoginReq.setPassword(EncryptPassword.getEncryptPassword(password));
 //    			userLoginReq.setInternetDeviceId(/*"10000"*/etNetdeviceId.getText().toString());
 //    			System.out.println("InternetDeviceId"+etNetdeviceId.getText().toString());
@@ -224,6 +225,7 @@ public class LoginActivity extends Activity implements OnClickListener,TagAliasC
     			userAgent.setiMEI(UserInformation.getAndroidPhoneIMEI(LoginActivity.this));
     			System.out.println("imei:"+UserInformation.getAndroidPhoneIMEI(LoginActivity.this));
     			userLoginReq.setUserAgent(userAgent);
+				Log.i("123","userLoginReq="+userLoginReq.toString());
     			res = mSoapManager.getUserLoginRes(userLoginReq);
     			
         	} catch (Exception e) {

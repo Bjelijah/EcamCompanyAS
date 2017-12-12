@@ -255,6 +255,7 @@ public class VideoInviteUtils {
 		StreamReqContext streamReqContext = null;
 		NATServerRes res = mSoapManager.getNATServerRes();
 		try{
+			Log.e("123", "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ip="+res.getsTUNServers().get(0).getiPv4Address()+"   port="+res.getsTUNServers().get(0).getPort());
 			StreamReqIceOpt opt = new StreamReqIceOpt(1, res.getsTUNServers().get(0).getiPv4Address()/*"42.96.151.28"*/,res.getsTUNServers().get(0).getPort(),
 					res.gettURNServers().get(0).getiPv4Address(), res.gettURNServers().get(0).getPort(), 
 					0, res.gettURNServers().get(0).getUsername(), res.gettURNServers().get(0).getPassword());

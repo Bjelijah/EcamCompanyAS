@@ -379,7 +379,8 @@ public class GroupRefreshListView extends ListView {
 	private void onFirstRefresh() throws InterruptedException {
 		while (refreshListener == null) {
 			System.out.println("123 wait onFirstRefresh sleep");
-			Thread.sleep(100);
+			//Thread.sleep(100);
+			return;
 		}
 		refreshListener.onFirstRefresh();
 	}

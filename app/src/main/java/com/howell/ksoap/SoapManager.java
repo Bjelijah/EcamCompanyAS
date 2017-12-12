@@ -113,6 +113,7 @@ public class SoapManager implements Serializable {
         rpc.addProperty("UserAgent",userAgent);
         
         SoapObject object = initEnvelopAndTransport(rpc,"http://www.howell.net.cn/InternetService/MCU/UserLogin");
+		Log.e("123","obj="+object.toString());
         try{
 	        Object result = object.getProperty("Result");
 	        userLoginRes.setResult(result.toString());

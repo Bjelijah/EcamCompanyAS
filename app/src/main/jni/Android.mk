@@ -52,14 +52,13 @@ LOCAL_SRC_FILES := libjpush170
 include $(BUILD_SHARED_LIBRARY)
 
 
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := player_jni
 # Add your application source files here...
 LOCAL_SRC_FILES := yv12gl_jni.c streamreq_jni.c audio_jni.c
 LOCAL_SHARED_LIBRARIES := hwplay  
 LOCAL_STATIC_LIBRARIES := ecamstream
-LOCAL_LDFLAGS := -LE:/Android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a
+LOCAL_LDFLAGS := -LD:/Android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a
 LOCAL_LDLIBS := -llog -lgnustl_static -lGLESv2 -lz -ldl -lgcc
 #	-L$(NDK_PLATFORMS_ROOT)/$(TARGET_PLATFORM)/arch-arm/usr/lib -L$(LOCAL_PATH) -lz -ldl -lgcc 
 include $(BUILD_SHARED_LIBRARY)

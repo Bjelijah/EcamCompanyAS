@@ -96,7 +96,20 @@ public class UserLoginReq {
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}
-	
 
-
+	@Override
+	public String toString() {
+		return "UserLoginReq{" +
+				"username='" + username + '\'' +
+				", userType='" + userType + '\'' +
+				", passwordType='" + passwordType + '\'' +
+				", password='" + password + '\'' +
+				", internetDeviceId='" + internetDeviceId + '\'' +
+				", applicationId='" + applicationId + '\'' +
+				", applicationVersion='" + applicationVersion + '\'' +
+				", networkOperator='" + networkOperator + '\'' +
+				", networkType='" + networkType + '\'' +
+				", userAgent=" + userAgent +
+				'}';
+	}
 }
